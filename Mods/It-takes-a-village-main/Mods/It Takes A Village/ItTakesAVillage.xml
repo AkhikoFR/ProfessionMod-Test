@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+
+    <ServerGroup Name="It Takes A Village" Logo="" Description="">
+        <Server Name="It Takes A Village" Logo="">
+            <Description>
+Choose between 8 trade professions and collaborate with other survivors attempting to rebuild society.
+Buy and sell goods in your shop to supply the community with specialized resources that only You can obtain. 
+Are you the Mechanic, the Reaper, the Scientist or the Cook?
+How will you support the village?
+
+Recommended for atleast 3 players.
+
+A server side A20.x mod that does not require disabling of EAC. Only the host needs to have the mod in their Mods folder. 
+To adjust certain settings, the server host can download the "Special Settings It Takes A Village" modlet to easily customize the mod to fit bigger communities.
+
+Last updated: v.1.11 - October 7th 2022 by Khym and Pesmax
+
+Made by Khym and Pesmax
+Extra credits:
+Haidr'Gna..................................Invisible Dye and bucketloads of advice
+KhaineGB...................................Increased Land Claim numbers
+Max Fox....................................We started our modding adventure with Max Fox's XML Modding Tutorial series on youtube, and couldn't have made this mod without it.
+Guppy's Unoffical 7dtd discord server......Throughout the process, the people of this server have also been really helpful.
+            </Description>
+            <Version>Latest_experimental</Version>
+            <Discord>https://discord.gg/zUXwRvppFS</Discord>
+            <Donate></Donate>
+            <RSS/>
+                <Excludes>
+                <Exclude>7DaysToDieServer_Data</Exclude>
+                <Exclude>\obj</Exclude>
+                <Exclude>\bin</Exclude>
+            </Excludes>
+            <ReleaseNotes/>
+            <DownloadMode>Clone</DownloadMode>
+            <Downloads>
+                <Download>https://github.com/Pesmax/It-takes-a-village</Download>
+            </Downloads>
+        </Server>
+
+
+
+    </ServerGroup>
+
+
+
+
+</Servers>
