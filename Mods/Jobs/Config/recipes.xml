@@ -1,0 +1,22 @@
+<configs>
+	<append xpath="/recipes">
+        <recipe name="Livre Mecanicien" count="1" craft_exp_gain="0" craft_time="1">
+			<ingredient name="Curriculum Vitae" count="1"/>
+		</recipe>
+		<recipe name="Livre Cuisinier" count="1" craft_exp_gain="0" craft_time="1">
+			<ingredient name="Curriculum Vitae" count="1"/>
+		</recipe>
+		<recipe name="Livre Forgeron" count="1" craft_exp_gain="0" craft_time="1">
+			<ingredient name="Curriculum Vitaer" count="1"/>
+		</recipe>
+		<recipe name="Livre Armurier" count="1" craft_exp_gain="0" craft_time="1">
+			<ingredient name="Curriculum Vitae" count="1"/>
+		</recipe>
+		<recipe name="Livre Electricien" count="1" craft_exp_gain="0" craft_time="1">
+			<ingredient name="Curriculum Vitae" count="1"/>
+		</recipe>
+		<recipe name="Livre Brigand" count="1" craft_exp_gain="0" craft_time="1">
+			<ingredient name="Curriculum Vitae" count="1"/>
+		</recipe>
+	</append>
+</configs>

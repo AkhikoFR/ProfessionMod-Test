@@ -1,3 +1,0 @@
-<configs>
-	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">Carrier Paper,Hobby Paper,Hobby Paper</setattribute>
-</configs>

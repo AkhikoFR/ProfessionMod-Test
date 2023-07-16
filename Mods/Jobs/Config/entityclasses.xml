@@ -1,0 +1,3 @@
+<configs>
+	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">Curriculum Vitae</setattribute>
+</configs>
