@@ -1,0 +1,69 @@
+<configs>
+<insertAfter xpath="/progression/attributes/attribute[@name='attBooks']">
+	<attribute name="Traits" name_key="Jobs and Traits" desc_key="You Worked These jobs and had these hobbies before the apocalypse" min_level="1" max_level="1" icon="ui_game_symbol_add">
+		<level_requirements level="1">	<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="Jobs" long_desc_key=""/>
+			</effect_group>
+	</attribute>
+</insertAfter>
+
+<insertAfter xpath="/progression/skills/skill[@name='skillWasteTreasures']">
+	<skill name="Jobs" parent="Traits" name_key="Jobs" desc_key="You Worked These jobs before the apocalypse" icon="Jobss"><effect_group/></skill>
+	<skill name="Hobbies" parent="Traits" name_key="Hobbies" desc_key="You was good in these stuff" icon="Hobbyy"><effect_group/></skill>
+</insertAfter>
+
+<insertAfter xpath="/progression/perks/perk[@name='perkGreaseMonkey']">
+		<perk name="Carpenter" max_level="1" parent="Jobs" base_skill_point_cost="10" name_key="Carpenter" desc_key="This Job is great for those who are looking to build their own base.   More Harvest from Ore/wood." icon="JobCarpenter">
+			<effect_group>
+			    <passive_effect name="HarvestCount" operation="perc_add" level="1" value=".03" tags="oreWoodHarvest"/>
+
+				<effect_description level="1" desc_key="Carpenter" long_desc_key="This Job is great for those who are looking to build their own base."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="Chef" max_level="1" parent="Jobs" base_skill_point_cost="10" name_key="Chef" desc_key="Chefs are very good at handling various kitchenware. Choosing this profession ensures that you'll eat well even after the apocalypse and use the most out of ingredients.   Faster Cooking." icon="JobChef">
+			<effect_group>
+			    <passive_effect name="CraftingTime" operation="perc_add" level="1" value="-.05" tags="perkMasterChef"/>
+
+				<effect_description level="1" desc_key="Chef" long_desc_key="Chefs are very good at handling various kitchenware. Choosing this profession ensures that you'll eat well even after the apocalypse and use the most out of ingredients."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="Veteran" max_level="1" parent="Jobs" base_skill_point_cost="10" name_key="Veteran" desc_key="Veterans never panic, no matter how bad it is they can stand their ground and deal out headshots to any zombies that made the mistake of trying to scare them.   Better with guns." icon="JobVeteran">
+			<effect_group>
+			<requirement name="ItemHasTags" tags="ranged"/>
+			    <passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value="0.05"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value="0.05"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value="0.05"/>
+
+				<effect_description level="1" desc_key="Veteran" long_desc_key="Veterans never panic, no matter how bad it is they can stand their ground and deal out headshots to any zombies that made the mistake of trying to scare them."/>
+			</effect_group>
+		</perk>
+
+			<perk name="Gardener" max_level="1" parent="Hobbies" base_skill_point_cost="10" name_key="Gardener" desc_key="Has basic agriculture knowledge.   Harvest more Crops." icon="TraitGardener">
+			<effect_group>
+                <passive_effect name="HarvestCount" operation="perc_add" level="1" value="1" tags="cropHarvest,wildCropsHarvest"/>
+
+				<effect_description level="1" desc_key="Gardener" long_desc_key="Has basic agriculture knowledge."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="Brawler" max_level="1" parent="Hobbies" base_skill_point_cost="10" name_key="Brawler" desc_key="Used to getting into trouble.   More damage with hands." icon="TraitBrawler">
+			<effect_group>
+			    <requirement name="ItemHasTags" tags="perkBrawler"/>
+                <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".05"/>
+
+				<effect_description level="1" desc_key="Brawler" long_desc_key="Used to getting into trouble"/>
+			</effect_group>
+		</perk>
+		
+		<perk name="Runner" max_level="1" parent="Hobbies" base_skill_point_cost="10" name_key="Runner" desc_key="Runner in the spare times.   Faster running." icon="TraitRunner">
+			<effect_group>
+                <passive_effect name="RunSpeed" operation="perc_add" level="1" value=".03"/>
+
+				<effect_description level="1" desc_key="Runner" long_desc_key="Runner in the spare times"/>
+			</effect_group>
+		</perk>
+</insertAfter>
+</configs>
