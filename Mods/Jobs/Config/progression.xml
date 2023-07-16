@@ -1,65 +1,29 @@
 <configs>
-<append xpath="progression/skills">
-<book_group name="Jobs" parent="attBooks" name_key="perkJobs0Name" desc_key="perkJobs0Desc" icon="Jobs"><effect_group/></book_group>
-</append>
-
 <append xpath="progression/perks">
 
 	<!-- Mecanicien-->
 	<book name="PerkMecanicien" max_level="1" base_skill_point_cost="0" ">
-		<effect_group>
-			<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".25" tags="safes">
-				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
-			</passive_effect>
-		</effect_group>
 	</book>
 	
 	<!-- Cuisinier -->
 	<book name="PerkCuisinier" max_level="1" base_skill_point_cost="0" ">
-		<effect_group>
-			<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".25" tags="safes">
-				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
-			</passive_effect>
-		</effect_group>
 	</book>
 	
 	<!-- Forgeron -->
 	<book name="PerkForgeron" max_level="1" base_skill_point_cost="0" ">
-		<effect_group>
-			<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".25" tags="safes">
-				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
-			</passive_effect>
-		</effect_group>
 	</book>
 	
 	<!-- Armurier -->
 	<book name="PerkArmurier" max_level="1" base_skill_point_cost="0" ">
-		<effect_group>
-			<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".25" tags="safes">
-				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
-			</passive_effect>
-		</effect_group>
 	</book>
 
 	<!-- Electricien -->
 	<book name="PerkElectricien" max_level="1" base_skill_point_cost="0" ">
-		<effect_group>
-			<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".25" tags="safes">
-				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
-			</passive_effect>
-		</effect_group>
 	</book>
 	
 	<!-- Brigand -->
 	<book name="PerkBrigand" max_level="1" base_skill_point_cost="0" ">
-		<effect_group>
-			<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".25" tags="safes">
-				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
-			</passive_effect>
-		</effect_group>
 	</book>	
 	
 </append>
-
-
 </configs>
