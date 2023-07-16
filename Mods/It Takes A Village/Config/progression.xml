@@ -36,43 +36,8 @@
 
 
 
-<!-- Moving Electrocutioner from Intellect to Strength Attribute tree -->
-<setattribute xpath="//perk[@name='perkElectrocutioner']" name="parent">skillStrengthCombat</setattribute>
-<setattribute xpath="//perk[@name='perkElectrocutioner']/level_requirements/requirement" name="progression_name">attStrength</setattribute>
-<setattribute xpath="//perk[@name='perkElectrocutioner']/level_requirements/requirement[@desc_key='reqIntellectLevel01']" name="desc_key">reqStrengthLevel01</setattribute>
-<setattribute xpath="//perk[@name='perkElectrocutioner']/level_requirements/requirement[@desc_key='reqIntellectLevel03']" name="desc_key">reqStrengthLevel03</setattribute>
-<setattribute xpath="//perk[@name='perkElectrocutioner']/level_requirements/requirement[@desc_key='reqIntellectLevel05']" name="desc_key">reqStrengthLevel05</setattribute>
-<setattribute xpath="//perk[@name='perkElectrocutioner']/level_requirements/requirement[@desc_key='reqIntellectLevel07']" name="desc_key">reqStrengthLevel07</setattribute>
-<setattribute xpath="//perk[@name='perkElectrocutioner']/level_requirements/requirement[@desc_key='reqIntellectLevel10']" name="desc_key">reqStrengthLevel10</setattribute>
-
-<!-- Moving Charismatic Nature from Intellect to Fortitude Attribute tree -->
-<setattribute xpath="//perk[@name='perkCharismaticNature']" name="parent">skillFortitudeSurvival</setattribute>
-<setattribute xpath="//perk[@name='perkCharismaticNature']/level_requirements/requirement" name="progression_name">attFortitude</setattribute>
-<setattribute xpath="//perk[@name='perkCharismaticNature']/level_requirements/requirement[@desc_key='reqIntellectLevel01']" name="desc_key">reqFortitudeLevel01</setattribute>
-<setattribute xpath="//perk[@name='perkCharismaticNature']/level_requirements/requirement[@desc_key='reqIntellectLevel03']" name="desc_key">reqFortitudeLevel03</setattribute>
-<setattribute xpath="//perk[@name='perkCharismaticNature']/level_requirements/requirement[@desc_key='reqIntellectLevel05']" name="desc_key">reqFortitudeLevel05</setattribute>
-<setattribute xpath="//perk[@name='perkCharismaticNature']/level_requirements/requirement[@desc_key='reqIntellectLevel07']" name="desc_key">reqFortitudeLevel07</setattribute>
-<setattribute xpath="//perk[@name='perkCharismaticNature']/level_requirements/requirement[@desc_key='reqIntellectLevel10']" name="desc_key">reqFortitudeLevel10</setattribute>
-
-<!-- Removing weapon crafting from vanilla perks, making Weaponsmith more viable -->
-<remove xpath="//perk[@name='perkDeadEye']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkBoomstick']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkPummelPete']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkBrawler']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkArchery']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkGunslinger']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
-<remove xpath="//perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
 
 
-<!-- Changing perkbooks found in the wild to reward non-profession-intrusive things instead -->
-<setattribute xpath="//perk[@name='perkBatterUpBaseballBats']/effect_group/passive_effect" name="tags">modArmorBallCap</setattribute>
-<setattribute xpath="//perk[@name='perkSpearHunter3SteelSpears']/effect_group/passive_effect" name="tags">modMeleeClubBurningShaft</setattribute>
-<setattribute xpath="//perk[@name='perkAutoWeaponsMachineGuns']/effect_group/passive_effect" name="tags">modGunFlashlight</setattribute>
-<setattribute xpath="//perk[@name='perkUrbanCombatLanding']/effect_group/passive_effect" name="tags">modArmorImpactBracing</setattribute>
 
 <!-- PERKS -->
 <append xpath="/progression">
@@ -598,38 +563,9 @@
 </append>
 
 <setattribute xpath="//passive_effect[@name='CraftingTier' and @value='1,2,3,4,4']" name="value">1,2,3,4,5</setattribute> <!-- Allowing primitive weapons and tools to be crafted to tier 6 -->
-<remove xpath="//perk[@name='perkEnforcerIntimidation']/effect_group/passive_effect"/>
-<append xpath="//perk[@name='perkEnforcerIntimidation']/effect_group">
 	<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".10"/>
 </append>
-<setattribute xpath="//perk[@name='perkLuckyLooterDukes']/effect_group/passive_effect[@name='LootQuantity']" name="value">.02</setattribute>
 
-<!-- Replacing the bundling of resources from mining book because Miner has it in the perk -->
-
-<setattribute xpath="//perk[@name='perkArtOfMiningPallets']/effect_group/passive_effect[@name='RecipeTagUnlocked']" name="tags">apparelDivingMaskITAV</setattribute>
-
-<!-- Removing Vanilla perks-->
-<remove xpath="//perk[@name='perkAdvancedEngineering']" />
-<remove xpath="//perk[@name='perkMiner69r']" />
-<remove xpath="//perk[@name='perkMotherLode']" />
-<remove xpath="//perk[@name='perkAnimalTracker']" />
-<remove xpath="//perk[@name='perkTheHuntsman']" />
-<remove xpath="//perk[@name='perkMasterChef']" />
-<remove xpath="//perk[@name='perkLightArmor']" />
-<remove xpath="//perk[@name='perkHeavyArmor']" />
-<remove xpath="//perk[@name='perkLuckyLooter']" />
-<remove xpath="//perk[@name='perkLivingOffTheLand']" />
-<remove xpath="//perk[@name='perkPhysician']" />
-<remove xpath="//perk[@name='perkTurrets']" />
-<remove xpath="//perk[@name='perkSalvageOperations']" />
-<remove xpath="//perk[@name='perkGreaseMonkey']" />
-<remove xpath="//perk[@name='perkInfiltrator']" />
-<remove xpath="//perk[@name='perkDaringAdventurer']" />
-<remove xpath="//perk[@name='perkBetterBarter']" />
-<remove xpath="//skill[contains(@name, 'Intellect')]" />
-<remove xpath="//attribute[@name='attIntellect']" />
-<remove xpath="//skill[@name='skillStrengthConstruction']" />
-<remove xpath="//perk[@name='perkLockPicking']/effect_group/passive_effect[@name='RecipeTagUnlocked']" />
 
 	
 </configs>
