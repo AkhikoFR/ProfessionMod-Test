@@ -2,27 +2,27 @@
 <append xpath="progression/perks">
 
 	<!-- Mecanicien-->
-	<book name="PerkMecanicien" max_level="1" base_skill_point_cost="0" ">
+	<book name="perkMecanicien" parent="skillJobs" max_level="1" base_skill_point_cost="0">
 	</book>
 	
 	<!-- Cuisinier -->
-	<book name="PerkCuisinier" max_level="1" base_skill_point_cost="0" ">
+	<book name="perkCuisinier" parent="skillJobs" max_level="1" base_skill_point_cost="0">
 	</book>
 	
 	<!-- Forgeron -->
-	<book name="PerkForgeron" max_level="1" base_skill_point_cost="0" ">
+	<book name="perkForgeron" parent="skillJobs" max_level="1" base_skill_point_cost="0">
 	</book>
 	
 	<!-- Armurier -->
-	<book name="PerkArmurier" max_level="1" base_skill_point_cost="0" ">
+	<book name="perkArmurier" parent="skillJobs" max_level="1" base_skill_point_cost="0">
 	</book>
 
 	<!-- Electricien -->
-	<book name="PerkElectricien" max_level="1" base_skill_point_cost="0" ">
+	<book name="perkElectricien" parent="skillJobs" max_level="1" base_skill_point_cost="0">
 	</book>
 	
 	<!-- Brigand -->
-	<book name="PerkBrigand" max_level="1" base_skill_point_cost="0" ">
+	<book name="perkBrigand" parent="skillJobs" max_level="1" base_skill_point_cost="0" >
 	</book>	
 	
 </append>

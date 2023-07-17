@@ -12,7 +12,7 @@
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
 	<property name="CustomIcon" value="Mechanic"/>
 	<property name="DescriptionKey" value=""/>
-	<property name="Unlocks" value="PerkMecanicien"/>
+	<property name="Unlocks" value="perkMecanicien"/>
     <property name="Tags" value="Jobs"/>
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
@@ -30,7 +30,7 @@
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
 	<property name="CustomIcon" value="Cuisinier"/>
 	<property name="DescriptionKey" value=""/>
-	<property name="Unlocks" value="PerkCuisinier"/>
+	<property name="Unlocks" value="perkCuisinier"/>
     <property name="Tags" value="Jobs"/>
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
@@ -48,7 +48,7 @@
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
 	<property name="CustomIcon" value="Forgeron"/>
 	<property name="DescriptionKey" value=""/>
-	<property name="Unlocks" value="PerkForgeron"/>
+	<property name="Unlocks" value="perkForgeron"/>
     <property name="Tags" value="Jobs"/>
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
@@ -64,9 +64,9 @@
 <!-- *** Armurier -->
 <item name="Livre Armurier">
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
-	<property name="CustomIcon" value="PerkArmurier"/>
+	<property name="CustomIcon" value="Armurier"/>
 	<property name="DescriptionKey" value=""/>
-	<property name="Unlocks" value="PerkArmurier"/>
+	<property name="Unlocks" value="perkArmurier"/>
     <property name="Tags" value="Jobs"/>
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
@@ -84,7 +84,7 @@
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
 	<property name="CustomIcon" value="Electricien"/>
 	<property name="DescriptionKey" value=""/>
-	<property name="Unlocks" value="PerkElectricien"/>
+	<property name="Unlocks" value="perkElectricien"/>
     <property name="Tags" value="Jobs"/>
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
@@ -102,7 +102,7 @@
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
 	<property name="CustomIcon" value="Brigand"/>
 	<property name="DescriptionKey" value=""/>
-	<property name="Unlocks" value="PerkBrigand"/>
+	<property name="Unlocks" value="perkBrigand"/>
     <property name="Tags" value="Jobs"/>
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
