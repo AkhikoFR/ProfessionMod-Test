@@ -1,6 +1,10 @@
 <configs>
-<append xpath="progression/perks">
 
+<append xpath="progression/skills">
+<book_group name="skillJobs" parent="attBooks" name_key="perkJobs0Name" desc_key="perkJobs0Desc" icon="Jobs"><effect_group/></book_group>
+</append>
+
+<append xpath="progression/perks">
 	<!-- Mecanicien-->
 	<book name="perkMecanicien" parent="skillJobs" max_level="1" base_skill_point_cost="0">
 	</book>
@@ -24,6 +28,5 @@
 	<!-- Brigand -->
 	<book name="perkBrigand" parent="skillJobs" max_level="1" base_skill_point_cost="0" >
 	</book>	
-	
 </append>
 </configs>

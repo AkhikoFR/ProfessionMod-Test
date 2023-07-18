@@ -17,12 +17,11 @@
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkMecanicien" operation="Equals" value="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Mecanicien" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMecanicien" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Travail" level="-1">
-			<requirement name="PerksUnlocked" skill_name="Mecanicien" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="Mecanicien" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Cuisinier -->
@@ -35,12 +34,11 @@
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkCuisinier" operation="Equals" value="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Cuisinier" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCuisinier" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Travail" level="-1">
-			<requirement name="PerksUnlocked" skill_name="Cuisinier" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="Cuisinier" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Forgeron -->
@@ -53,12 +51,11 @@
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Forgeron" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkForgeron" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Travail" level="-1">
-			<requirement name="PerksUnlocked" skill_name="Forgeron" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="Forgeron" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Armurier -->
@@ -71,12 +68,11 @@
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkArmurier" operation="Equals" value="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Armurier" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArmurier" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Travail" level="-1">
-			<requirement name="PerksUnlocked" skill_name="Armurier" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="Armurier" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Electricien -->
@@ -89,12 +85,11 @@
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkElectricien" operation="Equals" value="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Electricien" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkElectricien" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Travail" level="-1">
-			<requirement name="PerksUnlocked" skill_name="Electricien" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="Electricien" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Brigand -->
@@ -107,12 +102,11 @@
 	<property name="Group" value="Books,BooksOnly,TCReading"/>
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkBrigand" operation="Equals" value="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Brigand" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBrigand" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="Travail" level="-1">
-			<requirement name="PerksUnlocked" skill_name="Brigand" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="Brigand" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
 	</effect_group>
 </item>
 </append>
