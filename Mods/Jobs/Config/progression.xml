@@ -6,27 +6,27 @@
 
 <append xpath="progression/perks">
 	<!-- Mecanicien-->
-	<book name="perkMecanicien" parent="skillJobs" max_level="1" base_skill_point_cost="0">
+	<book name="perkMecanicien" parent="skillJobs" max_level="1" base_skill_point_cost="0" desc_key="perkMecanicienDesc" long_desc_key="perkMecanicienLongDesc">
 	</book>
 	
 	<!-- Cuisinier -->
-	<book name="perkCuisinier" parent="skillJobs" max_level="1" base_skill_point_cost="0">
+	<book name="perkCuisinier" parent="skillJobs" max_level="1" base_skill_point_cost="0" desc_key="perkCuisinierDesc" long_desc_key="perkCuisinierLongDesc">
 	</book>
 	
 	<!-- Forgeron -->
-	<book name="perkForgeron" parent="skillJobs" max_level="1" base_skill_point_cost="0">
+	<book name="perkForgeron" parent="skillJobs" max_level="1" base_skill_point_cost="0" desc_key="perkForgeronDesc" long_desc_key="perkForgeronLongDesc">
 	</book>
 	
 	<!-- Armurier -->
-	<book name="perkArmurier" parent="skillJobs" max_level="1" base_skill_point_cost="0">
+	<book name="perkArmurier" parent="skillJobs" max_level="1" base_skill_point_cost="0" desc_key="perkArmurierDesc" long_desc_key="perkArmurierLongDesc">
 	</book>
 
 	<!-- Electricien -->
-	<book name="perkElectricien" parent="skillJobs" max_level="1" base_skill_point_cost="0">
+	<book name="perkElectricien" parent="skillJobs" max_level="1" base_skill_point_cost="0" desc_key="perkElectricienDesc" long_desc_key="perkElectricienLongDesc">
 	</book>
 	
 	<!-- Brigand -->
-	<book name="perkBrigand" parent="skillJobs" max_level="1" base_skill_point_cost="0" >
+	<book name="perkBrigand" parent="skillJobs" max_level="1" base_skill_point_cost="0" desc_key="perkBrigandDesc" long_desc_key="perkBrigandLongDesc">
 	</book>	
 </append>
 
