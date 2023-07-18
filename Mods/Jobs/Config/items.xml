@@ -7,6 +7,7 @@
 	<property name="DescriptionKey" value="Quel etais ton travail avant la fin du monde ?"/>
 	<property name="CustomIcon" value="CV"/>
  </item>
+ <!-- *** Mecanicien -->
 	<item name="Livre Mecanicien">
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
 	<property name="CustomIcon" value="Mechanic"/>
@@ -18,7 +19,21 @@
 		<requirement name="ProgressionLevel" progression_name="perkMecanicien" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMecanicien" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingVehicles" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankSmall" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankLarge" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modVehicleFuelSaver" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modVehicleOffRoadHeadlights" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modVehicleSuperCharger" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modVehicleExpandedSeat" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modVehicleReserveFuelTank" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneArmorPlatingMod" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneCargoMod" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneMoraleBoosterMod" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneHeadlampMod" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneMedicMod" operation="set" value="1"/>
+		</triggered_effect>
 	</effect_group>
  </item>
 <!-- *** Cuisinier -->
@@ -34,6 +49,13 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCuisinier" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
 			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMedical" level="75" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingFood" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSeeds" level="20" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterFood" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterMedical" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresHoney" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresWater" level="-1" show_message="false"/>
 	</effect_group>
  </item>
 <!-- *** Forgeron -->
@@ -48,7 +70,38 @@
 		<requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkForgeron" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="50" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="75" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="75" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="75" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="75" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="75" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingWorkstations" level="75" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeTemperedBlade" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeSerratedBlade" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeWeightedHead" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeStructuralBrace" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeErgonomicGrip" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeFortifyingGrip" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubBarbedWire" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubMetalSpikes" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubBurningShaft" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeGraveDigger" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeBunkerBuster" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeIronBreaker" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeWoodSplitter" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningLuckyStrike" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningDiamondTools" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningCoffee" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningBlackStrap" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningPallets" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningAvalanche" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningDamage" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningComplete" level="-1" show_message="false"/>
+		</triggered_effect>
+		
 	</effect_group>
  </item>
 <!-- *** Armurier -->
@@ -63,7 +116,64 @@
 		<requirement name="ProgressionLevel" progression_name="perkArmurier" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArmurier" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="75" show_message="false"/>	
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBarrelExtender" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMuzzleBrake" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunSoundSuppressorSilencer" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunLaserSight" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunFlashlight" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeSmall" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeMedium" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeLarge" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunReflexSight" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupSemi" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupBurst3" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupAutomatic" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBipod" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunForegrip" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunRetractingStock" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunFoldingStock" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modShotgunSawedOffBarrel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunDuckbill" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunChoke" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMagazineExtender" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunCrippleEm" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowPolymerString" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowArrowRest" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeTheHunter" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeRadRemover" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBandolier" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLiner" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMesh" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorImprovedFittings" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCustomizedFittings" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingBasic" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingReinforced" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorStoragePocket" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorDoubleStoragePocket" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorTripleStoragePocket" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorMuffledConnectors" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorAdvancedMuffledConnectors" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorImpactBracing" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorWaterPurifier" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorHelmetLight" operation="set" value="1"/>
+	    <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterAmmunition" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerAPAmmo" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerHPAmmo" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersAPAmmo" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteHPAmmo" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteAPAmmo" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahBreachingSlugs" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahSlugs" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperAPAmmo" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperHPAmmo" level="-1" show_message="false"/>
+		</triggered_effect>
 	</effect_group>
  </item>
 <!-- *** Electricien -->
@@ -78,7 +188,11 @@
 		<requirement name="ProgressionLevel" progression_name="perkElectricien" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkElectricien" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="75" show_message="false"/>
+		</triggered_effect>
 	</effect_group>
  </item>
 <!-- *** Brigand -->
@@ -93,7 +207,42 @@
 		<requirement name="ProgressionLevel" progression_name="perkBrigand" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBrigand" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="75" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerStealthDamage" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSilentNight" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerBlades" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerThiefAdrenaline" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerArchery" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerTwilightThief" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSlumberParty" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerComplete" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterDukes" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistSafes" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistGems" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistGoldRush" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistClaimed" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistAdrenalineFall" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistSprintSneak" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistMotionDetection" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistComplete" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalBears" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalWolves" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalCoyotes" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalMountainLions" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalDeer" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalVultures" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalSelfDefense" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalComplete" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersArrowRecovery" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersExplodingBolts" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersCripplingShot" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersFlamingArrows" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersForestGuide" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersKnockdown" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersComplete" level="-1" show_message="false"/>
+		</triggered_effect>
 	</effect_group>
 </item>
 </append>
