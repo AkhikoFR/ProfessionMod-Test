@@ -1,13 +1,12 @@
 <configs>
 <append xpath="/items">	
 <!-- *** CV -->
-<item name="Curriculum Vitae">
-			<property name="Extends" value="blankNoteMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="DescriptionKey" value="Quel etais ton travail avant la fin du monde ?"/>
-			<property name="CustomIcon" value="CV"/>
-		</item>
-		
+    <item name="Curriculum Vitae">
+	<property name="Extends" value="blankNoteMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="Quel etais ton travail avant la fin du monde ?"/>
+	<property name="CustomIcon" value="CV"/>
+ </item>
 	<item name="Livre Mecanicien">
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
 	<property name="CustomIcon" value="Mechanic"/>
@@ -18,12 +17,10 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkMecanicien" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMecanicien" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
 			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
-</item>
+ </item>
 <!-- *** Cuisinier -->
 <item name="Livre Cuisinier">
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
@@ -35,12 +32,10 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkCuisinier" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCuisinier" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
 			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
-</item>
+ </item>
 <!-- *** Forgeron -->
 <item name="Livre Forgeron">
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
@@ -52,12 +47,10 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkForgeron" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
 			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
-</item>
+ </item>
 <!-- *** Armurier -->
 <item name="Livre Armurier">
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
@@ -69,12 +62,10 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkArmurier" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArmurier" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
 			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
-</item>
+ </item>
 <!-- *** Electricien -->
 <item name="Livre Electricien">
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
@@ -86,12 +77,10 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkElectricien" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkElectricien" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
 			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
-</item>
+ </item>
 <!-- *** Brigand -->
 <item name="Livre Brigand">
 	<property name="Extends" value="bookFiremansAlmanacHeat"/>
@@ -103,8 +92,6 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkBrigand" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBrigand" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
 			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>

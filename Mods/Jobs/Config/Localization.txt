@@ -1,4 +1,4 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 
 perkJobs0Name,progression,perk  book,,,Jobs,,,,,,,,,,,,,,
-perkJobs0Desc,progression,perk  book,,,Jobs: Votre Travail.,,,,,,,,,,,,,,
+perkJobs0Desc,progression,perk  book,,,Votre travail au sein du village.,,,,,,,,,,,,,,

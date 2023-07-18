@@ -29,4 +29,5 @@
 	<book name="perkBrigand" parent="skillJobs" max_level="1" base_skill_point_cost="0" >
 	</book>	
 </append>
+
 </configs>
