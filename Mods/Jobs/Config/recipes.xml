@@ -1,28 +1,106 @@
 <configs>
 	<append xpath="/recipes">
-	
+<!-- Mecanicien -->
         <recipe name="Livre Mecanicien" count="1" craft_exp_gain="0" craft_time="1">
 		<ingredient name="Curriculum Vitae" count="1"/>
 		</recipe>
-		
+<!-- Cuisinier -->
 		<recipe name="Livre Cuisinier" count="1" craft_exp_gain="0" craft_time="1">
 		<ingredient name="Curriculum Vitae" count="1"/>
 		</recipe>
-		
+<!-- Forgeron -->
 		<recipe name="Livre Forgeron" count="1" craft_exp_gain="0" craft_time="1">
 		<ingredient name="Curriculum Vitae" count="1"/>
 		</recipe>
-		
+<!-- Armurier -->
 		<recipe name="Livre Armurier" count="1" craft_exp_gain="0" craft_time="1">
 		<ingredient name="Curriculum Vitae" count="1"/>
 		</recipe>
-		
+<!-- Electricien -->
 		<recipe name="Livre Electricien" count="1" craft_exp_gain="0" craft_time="1">
 		<ingredient name="Curriculum Vitae" count="1"/>
 		</recipe>
-		
+<!-- Brigand -->
 		<recipe name="Livre Brigand" count="1" craft_exp_gain="0" craft_time="1">
 		<ingredient name="Curriculum Vitae" count="1"/>
+		</recipe>
+<!-- Recettes Mecanicien -->
+    	<recipe name="vehicleWheels" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+		<ingredient name="resourceScrapPolymers" count="20"/>
+	    <ingredient name="resourceOil" count="2"/>
+		</recipe>
+
+    	<recipe name="vehicleMotorcycleChassis" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+	    <ingredient name="resourceDuctTape" count="5"/>
+		</recipe>
+
+    	<recipe name="vehicleMotorcycleHandlebars" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+		<ingredient name="resourceForgedIron" count="5"/>
+	    <ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+		
+    	<recipe name="smallEngine" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+		<ingredient name="resourceForgedIron" count="5"/>
+	    <ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>
+		
+    	<recipe name="carBattery" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+		<ingredient name="resourceScrapPolymers" count="16"/>
+	    <ingredient name="resourceOil" count="2"/>
+		</recipe>
+
+    	<recipe name="vehicle4x4TruckChassis" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceForgedIron" count="50"/>
+	    <ingredient name="resourceMechanicalParts" count="20"/>
+	    <ingredient name="resourceDuctTape" count="10"/>
+		</recipe>
+		
+    	<recipe name="vehicle4x4TruckAccessories" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceForgedIron" count="20"/>
+	    <ingredient name="resourceMechanicalParts" count="10"/>
+	    <ingredient name="resourceDuctTape" count="5"/>
+	    <ingredient name="resourceHeadlight" count="8"/>
+		</recipe>
+		
+    	<recipe name="vehicleBicycleChassis" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceForgedIron" count="5"/>
+		</recipe>
+		
+    	<recipe name="vehicleBicycleHandlebars" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceForgedIron" count="5"/>
+     	<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+		
+    	<recipe name="vehicleGyroCopterAccessories" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceForgedIron" count="50"/>
+	    <ingredient name="resourceElectricParts" count="15"/>
+	    <ingredient name="resourceMechanicalParts" count="10"/>
+     	<ingredient name="resourceDuctTape" count="20"/>
+		</recipe>
+
+    	<recipe name="vehicleGyroCopterChassis" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceForgedIron" count="75"/>
+	    <ingredient name="resourceElectricParts" count="20"/>
+	    <ingredient name="resourceMechanicalParts" count="20"/>
+     	<ingredient name="resourceDuctTape" count="30"/>
+		</recipe>
+		
+    	<recipe name="vehicleMinibikeChassis" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceForgedIron" count="5"/>
+	    <ingredient name="resourceMechanicalParts" count="2"/>
+     	<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+		
+    	<recipe name="vehicleMinibikeHandlebars" count="1" craft_time="50" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceForgedIron" count="5"/>
+	    <ingredient name="resourceMechanicalParts" count="5"/>
+     	<ingredient name="resourceDuctTape" count="3"/>
+		</recipe>
+		
+    	<recipe name="ammoGasCan" count="500" craft_time="5" craft_area="workbench" tags="perkMecanicien,learnable">
+	    <ingredient name="resourceCoal" count="50"/>
+	    <ingredient name="resourceOil" count="5"/>
 		</recipe>
 		
 	</append>
