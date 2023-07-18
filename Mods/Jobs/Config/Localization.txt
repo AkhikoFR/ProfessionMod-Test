@@ -2,3 +2,16 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
 
 perkJobs0Name,progression,perk  book,,,Jobs,,,,,,,,,,,,,,
 perkJobs0Desc,progression,perk  book,,,Votre travail au sein du village.,,,,,,,,,,,,,,
+
+perkMecanicienDesc,progression,perk  book,,,Mecanicien,,,,,,,,,,,,,,
+perkMecanicienLongDesc,progression,perk  book,,,Le domaine automobile est sans secret pour vous meme si vous rouler en bicyclette en pensant etre pilote de F1.,,,,,,,,,,,,,,
+perkCuisinierDesc,progression,perk  book,,,Cuisinier,,,,,,,,,,,,,,
+perkCuisinierLongDesc,progression,perk  book,,,Le domaine de la gastronomie est sans secret pour vous meme si vous faites des steak frites.,,,,,,,,,,,,,,
+perkForgeronDesc,progression,perk  book,,,Forgeron,,,,,,,,,,,,,,
+perkForgeronLongDesc,progression,perk  book,,,Sans vous les tombes seront encore creuser a bout de bras. Eviter de fondre leurs cadavres quand meme.,,,,,,,,,,,,,,
+perkArmurierDesc,progression,perk  book,,,Armurier,,,,,,,,,,,,,,
+perkArmurierLongDesc,progression,perk  book,,,Vous avez les batons qui crache du feux enfin sans vous ce sont des neandertal a jeter des cailloux.,,,,,,,,,,,,,,
+perkElectricienDesc,progression,perk  book,,,Electricien,,,,,,,,,,,,,,
+perkElectricienLongDesc,progression,perk  book,,,Eh oui. Sans vous ce ne sont pas des lumieres.,,,,,,,,,,,,,,
+perkBrigandDesc,progression,perk  book,,,Brigand,,,,,,,,,,,,,,
+perkBrigandLongDesc,progression,perk  book,,,Le 93 vous va si bien avec de la chasse en plus. Vous etes ennemi avec la justice et brigitte bardot.,,,,,,,,,,,,,,
