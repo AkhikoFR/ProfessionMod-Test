@@ -19,9 +19,9 @@
 		<requirement name="ProgressionLevel" progression_name="perkMecanicien" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMecanicien" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Cuisinier -->
@@ -36,9 +36,9 @@
 		<requirement name="ProgressionLevel" progression_name="perkCuisinier" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCuisinier" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Forgeron -->
@@ -53,9 +53,9 @@
 		<requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkForgeron" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Armurier -->
@@ -70,9 +70,9 @@
 		<requirement name="ProgressionLevel" progression_name="perkArmurier" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArmurier" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Electricien -->
@@ -87,9 +87,9 @@
 		<requirement name="ProgressionLevel" progression_name="perkElectricien" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkElectricien" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 <!-- *** Brigand -->
@@ -104,9 +104,9 @@
 		<requirement name="ProgressionLevel" progression_name="perkBrigand" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBrigand" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="6"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 </append>
