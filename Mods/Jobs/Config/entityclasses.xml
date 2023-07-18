@@ -1,3 +1,9 @@
 <configs>
-	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">Curriculum Vitae</setattribute>
+	    <!-- Starter Bundle -->
+    <append xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value"
+    >Curriculum Vitae</append>
+    <append xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value"
+    >Curriculum Vitae</append>
+    <append xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value"
+    >Curriculum Vitae</append>
 </configs>
