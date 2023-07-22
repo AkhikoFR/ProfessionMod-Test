@@ -18,6 +18,8 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkMecanicien" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMecanicien" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingVehicles" level="100" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankSmall" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankLarge" operation="set" value="1"/>
@@ -31,8 +33,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneMoraleBoosterMod" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneHeadlampMod" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneMedicMod" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+		</triggered_effect>
 	</effect_group>
  </item>
 <!-- *** Cuisinier -->
@@ -46,15 +47,15 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkCuisinier" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCuisinier" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMedical" level="75" show_message="true"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMedical" level="75" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingFood" level="100" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSeeds" level="20" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterFood" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterMedical" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresHoney" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresWater" level="-1" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
 	</effect_group>
  </item>
 <!-- *** Forgeron -->
@@ -68,7 +69,9 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkForgeron" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="100" show_message="true"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="100" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="50" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="75" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="75" show_message="false"/>
@@ -97,8 +100,8 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningAvalanche" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningDamage" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningComplete" level="-1" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+		</triggered_effect>
+		
 	</effect_group>
  </item>
 <!-- *** Armurier -->
@@ -112,7 +115,9 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkArmurier" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArmurier" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="100" show_message="true"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="100" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="100" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="100" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="100" show_message="false"/>
@@ -168,8 +173,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahSlugs" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperAPAmmo" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperHPAmmo" level="-1" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+		</triggered_effect>
 	</effect_group>
  </item>
 <!-- *** Electricien -->
@@ -183,11 +187,12 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkElectricien" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkElectricien" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="100" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="100" show_message="true"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="75" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="100" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="75" show_message="false"/>
+		</triggered_effect>
 	</effect_group>
  </item>
 <!-- *** Brigand -->
@@ -201,7 +206,9 @@
 	<effect_group tiered="false">
 		<requirement name="ProgressionLevel" progression_name="perkBrigand" operation="Equals" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBrigand" level="-1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="100" show_message="true"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="100" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="75" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerStealthDamage" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSilentNight" level="-1" show_message="false"/>
@@ -235,9 +242,104 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersForestGuide" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersKnockdown" level="-1" show_message="false"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersComplete" level="-1" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillJobs" operation="GTE" value="1"/></triggered_effect>
+		</triggered_effect>
 	</effect_group>
+	
+	<!-- *** Limitation Usage PerkBook en fonction du Jobs -->
+	
+	<setattribute xpath="/items/item[@name='harvestingToolsSkillMagazine']">
+	    <requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="3" show_message="false"/>
+	</setattribute>
+<!---
+	<append xpath="/items/item[@name='repairToolsSkillMagazine']">
+		<requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="1"/>
+	</append>
+
+	<append xpath="/items/item[@name='salvageToolsSkillMagazine']">
+		<requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="1"/>
+	</append>
+
+	<append xpath="/items/item[@name='knucklesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='bladesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='clubsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='sledgehammersSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='spearsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='bowsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='handgunsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='shotgunsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='riflesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='machineGunsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='explosivesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='roboticsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RScience"/>
+	</append>
+
+	<append xpath="/items/item[@name='armorSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RSArmor"/>
+	</append>
+
+	<append xpath="/items/item[@name='medicalSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RScience"/>
+	</append>
+
+	<append xpath="/items/item[@name='foodSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RFood"/>
+	</append>
+
+	<append xpath="/items/item[@name='seedSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RFood"/>
+	</append>
+
+	<append xpath="/items/item[@name='electricianSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RScience"/>
+	</append>
+
+	<append xpath="/items/item[@name='trapsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RScience"/>
+	</append>
+
+	<append xpath="/items/item[@name='workstationSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RUtility"/>
+	</append>
+
+	<append xpath="/items/item[@name='vehiclesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RUtility"/>
+	</append>
+	---->
 </item>
 </append>
 </configs>
