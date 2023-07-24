@@ -247,10 +247,10 @@
 	
 	<!-- *** Limitation Usage PerkBook en fonction du Jobs -->
 	
-	<setattribute xpath="/items/item[@name='harvestingToolsSkillMagazine']">
+	<append xpath="/items/item[@name='harvestingToolsSkillMagazine']">
 	    <requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="3" show_message="false"/>
-	</setattribute>
+	</append>
 <!---
 	<append xpath="/items/item[@name='repairToolsSkillMagazine']">
 		<requirement name="ProgressionLevel" progression_name="perkForgeron" operation="Equals" value="1"/>
@@ -338,8 +338,7 @@
 
 	<append xpath="/items/item[@name='vehiclesSkillMagazine']">
 		<property name="Group" value="Books,BooksOnly,TCReading,RUtility"/>
-	</append>
-	---->
+	</append>-->
 </item>
 </append>
 </configs>
